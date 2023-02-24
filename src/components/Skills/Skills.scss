@@ -2,6 +2,10 @@
 @use "../../styles/partials/variables" as *;
 
 .skills {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+
   &__text {
     color: $tertiary;
   }

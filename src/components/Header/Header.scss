@@ -2,10 +2,62 @@
 @use "../../styles/partials/variables" as *;
 
 .header {
-  background-color: $primary;
+  // background-color: $primary;
+  // height: 6rem;
+  max-width: 128rem;
+  margin: 0 auto;
+  @include flex(row);
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+
+  &__nav {
+    @include flex(row);
+    gap: 6rem;
+  }
+
+  &__home {
+    color: $primary;
+    // color: $secondary;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+    }
+  }
+
+  &__links {
+    @include flex(row);
+  }
 
   &__link {
-    color: $secondary;
+    color: $primary;
+    display: block;
+    width: 10rem;
+    // color: $secondary;
     text-decoration: none;
+    text-align: center;
+    // margin-right: 2rem;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  &__btn {
+    height: 4rem;
+    font-family: $font-stack;
+    background-color: $primary;
+    color: $secondary;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    // font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 0;
+
+    &:hover {
+      background-color: $tertiary;
+    }
   }
 }

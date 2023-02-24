@@ -2,6 +2,13 @@
 @use "../../styles/partials/variables" as *;
 
 .hero {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+
+  &__greeting {
+    font-size: 3.3rem;
+  }
   &__text {
     color: $tertiary;
   }
