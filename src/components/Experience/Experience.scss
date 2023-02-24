@@ -6,8 +6,23 @@
   margin: 0 auto;
   padding: 3rem 10rem;
 
+  &__container {
+    @include flex(row);
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+  }
+
+  &__header {
+    background-color: $primary;
+    color: $secondary;
+    padding: 1rem;
+  }
+
   &__text {
     color: $tertiary;
+    text-align: center;
   }
 
   &__resume {
