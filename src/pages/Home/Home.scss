@@ -5,3 +5,17 @@
   background-color: black;
   color: white;
 }
+
+.skills {
+  &__icon {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+.footer {
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+  }
+}
