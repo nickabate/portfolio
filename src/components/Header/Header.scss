@@ -1,0 +1,11 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.header {
+  background-color: $primary;
+
+  &__link {
+    color: $secondary;
+    text-decoration: none;
+  }
+}

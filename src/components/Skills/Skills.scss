@@ -1,0 +1,13 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.skills {
+  &__text {
+    color: $tertiary;
+  }
+  &__icon {
+    width: 9rem;
+    height: 9rem;
+    filter: contrast(70%);
+  }
+}

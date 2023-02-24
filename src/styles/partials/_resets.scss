@@ -15,7 +15,9 @@ html {
 body {
   font-size: 1.6rem;
   font-family: $font-stack;
-  color: black;
+  //   color: rgb(61, 65, 63);
+  color: $primary;
+  background-color: $secondary;
 }
 
 ul {

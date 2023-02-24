@@ -1,0 +1,10 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.footer {
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    filter: contrast(70%);
+  }
+}

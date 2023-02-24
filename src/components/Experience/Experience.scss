@@ -1,0 +1,19 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.experience {
+  &__text {
+    color: $tertiary;
+  }
+
+  &__resume {
+    text-decoration: none;
+    font-weight: 600;
+    color: $primary;
+    // font-style: italic;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
