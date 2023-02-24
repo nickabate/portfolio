@@ -11,16 +11,17 @@
   align-items: center;
   padding: 3rem 2rem;
 
-  &__nav {
-    @include flex(row);
-    gap: 6rem;
-  }
+  // &__nav {
+  //   @include flex(row);
+  //   gap: 6rem;
+  // }
 
   &__home {
     color: $primary;
     // color: $secondary;
     text-decoration: none;
     font-weight: 600;
+    font-size: 2rem;
 
     &:hover {
     }
@@ -28,6 +29,7 @@
 
   &__links {
     @include flex(row);
+    gap: 2rem;
   }
 
   &__link {
@@ -38,9 +40,15 @@
     text-decoration: none;
     text-align: center;
     // margin-right: 2rem;
+    font-size: 1.8rem;
 
     &:hover {
       font-weight: 600;
+      border-bottom: 0.2rem solid $primary;
+    }
+
+    &--mid {
+      margin-right: 1rem;
     }
   }
 
@@ -52,7 +60,7 @@
     border: none;
     cursor: pointer;
     padding: 1rem;
-    // font-weight: 600;
+    font-weight: 600;
     font-size: 1.6rem;
     line-height: 0;
 

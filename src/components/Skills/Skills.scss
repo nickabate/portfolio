@@ -4,14 +4,45 @@
 .skills {
   max-width: 128rem;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 10rem;
+
+  &__container {
+    @include flex(row);
+    flex-direction: row-reverse;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  &__header {
+    // text-align: right;
+    background-color: $primary;
+    color: $secondary;
+    padding: 1rem;
+  }
 
   &__text {
     color: $tertiary;
+    text-align: center;
   }
+
+  &__icons {
+    @include flex(row);
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    // max-width: 70rem;
+    margin: 0 auto;
+    border: 0.1rem solid $secondary;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0.8rem;
+    margin: 0 4rem;
+    padding: 2rem;
+  }
+
   &__icon {
-    width: 9rem;
-    height: 9rem;
+    width: 6rem;
+    height: 6rem;
     filter: contrast(70%);
   }
 }

@@ -5,6 +5,21 @@
   max-width: 128rem;
   margin: 0 auto;
   padding: 3rem 2rem;
+  @include flex(row);
+  gap: 6rem;
+  justify-content: center;
+
+  &__image {
+    width: 30rem;
+    border-radius: 50%;
+  }
+
+  &__container {
+    width: 50rem;
+    @include flex(column);
+    align-items: flex-start;
+    justify-content: center;
+  }
 
   &__greeting {
     font-size: 3.3rem;
