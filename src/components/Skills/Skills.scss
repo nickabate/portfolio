@@ -8,16 +8,21 @@
 
   &__container {
     @include flex(row);
-    flex-direction: row-reverse;
+    // flex-direction: row-reverse;
     gap: 4rem;
-    align-items: center;
+    // align-items: center;
     margin-bottom: 4rem;
+  }
+
+  &__split-l {
+    min-width: 17rem;
   }
 
   &__header {
     background-color: $primary;
     color: $secondary;
     padding: 1rem;
+    text-align: center;
   }
 
   &__text {
@@ -28,14 +33,14 @@
   &__icons {
     @include flex(row);
     justify-content: center;
-    gap: 2rem;
+    gap: 4.2rem;
     flex-wrap: wrap;
-    // max-width: 70rem;
-    margin: 0 auto;
+    // max-width: 80rem;
+    // margin: 0 auto;
     border: 0.1rem solid $secondary;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
     border-radius: 0.8rem;
-    margin: 0 4rem;
+    margin: 3rem;
     padding: 2rem;
   }
 

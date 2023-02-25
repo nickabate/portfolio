@@ -21,33 +21,37 @@ import github from "../../assets/images/tech/github.png";
 
 export default function Skills() {
   return (
-    <section className="skills">
+    <section id="skills" className="skills">
       <div className="skills__container">
-        <h2 className="skills__header">Skills</h2>
-        <p className="skills__text">
-          Some of the software, languages, frameworks and libraries I've worked
-          with on my journey include the following. I'm always looking to expand
-          my toolset and learn something new!
-        </p>
-      </div>
-      <div className="skills__icons">
-        <img className="skills__icon" src={html} alt="html" />
-        <img className="skills__icon" src={expressjs} alt="expressjs" />
-        <img className="skills__icon" src={git} alt="git" />
-        <img className="skills__icon" src={javascript} alt="javascript" />
-        <img className="skills__icon" src={css} alt="css" />
-        <img className="skills__icon" src={mysql} alt="mysql" />
-        <img className="skills__icon" src={nodejs} alt="nodejs" />
-        <img className="skills__icon" src={react} alt="react" />
-        <img className="skills__icon" src={sass} alt="sass" />
-        <img className="skills__icon" src={figma} alt="figma" />
-        <img className="skills__icon" src={vscode} alt="vscode" />
-        <img className="skills__icon" src={axios} alt="axios" />
-        <img className="skills__icon" src={netlify} alt="netlify" />
-        <img className="skills__icon" src={npm} alt="npm" />
-        <img className="skills__icon" src={github} alt="github" />
-        <img className="skills__icon" src={heroku} alt="heroku" />
-        <img className="skills__icon" src={jira} alt="jira" />
+        <div className="skills__split-l">
+          <h2 className="skills__header">Skills</h2>
+        </div>
+        <div className="skills__split-r">
+          <p className="skills__text">
+            Some of the software, languages, frameworks and libraries I've
+            worked with on my journey include the following. I'm always looking
+            to expand my toolset and learn something new!
+          </p>
+          <div className="skills__icons">
+            <img className="skills__icon" src={html} alt="html" />
+            <img className="skills__icon" src={expressjs} alt="expressjs" />
+            <img className="skills__icon" src={git} alt="git" />
+            <img className="skills__icon" src={javascript} alt="javascript" />
+            <img className="skills__icon" src={css} alt="css" />
+            <img className="skills__icon" src={mysql} alt="mysql" />
+            <img className="skills__icon" src={nodejs} alt="nodejs" />
+            <img className="skills__icon" src={react} alt="react" />
+            <img className="skills__icon" src={sass} alt="sass" />
+            <img className="skills__icon" src={figma} alt="figma" />
+            <img className="skills__icon" src={vscode} alt="vscode" />
+            <img className="skills__icon" src={axios} alt="axios" />
+            <img className="skills__icon" src={netlify} alt="netlify" />
+            <img className="skills__icon" src={npm} alt="npm" />
+            <img className="skills__icon" src={github} alt="github" />
+            <img className="skills__icon" src={heroku} alt="heroku" />
+            <img className="skills__icon" src={jira} alt="jira" />
+          </div>
+        </div>
       </div>
     </section>
   );

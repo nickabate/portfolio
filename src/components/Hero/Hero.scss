@@ -4,10 +4,16 @@
 .hero {
   max-width: 128rem;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 0 2rem 10rem;
   @include flex(row);
   gap: 6rem;
   justify-content: center;
+  height: 90vh;
+
+  &__image-container {
+    @include flex(row);
+    align-items: center;
+  }
 
   &__image {
     width: 30rem;

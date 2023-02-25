@@ -9,14 +9,19 @@
   &__container {
     @include flex(row);
     gap: 4rem;
-    align-items: center;
+    // align-items: center;
     margin-bottom: 4rem;
+  }
+
+  &__split-l {
+    min-width: 17rem;
   }
 
   &__header {
     background-color: $primary;
     color: $secondary;
     padding: 1rem;
+    text-align: center;
   }
 
   &__text {
@@ -25,11 +30,12 @@
   }
 
   &__projects {
-    margin: 0 auto;
+    margin: 3rem;
     border: 0.1rem solid $secondary;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
     border-radius: 0.8rem;
-    margin: 0 4rem;
+    // margin: 0 auto;
     padding: 2rem;
+    // max-width: 80rem;
   }
 }

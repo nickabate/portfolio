@@ -8,7 +8,7 @@ import twitter from "../../assets/images/socials/twitter.png";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <h2>Get in touch with me!</h2>
       <div className="footer__socials">
         <Link target="_blank" to="https://github.com/nickabate">

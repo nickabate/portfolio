@@ -5,10 +5,12 @@ import resume from "../../assets/files/Nick-Abate-Resume.pdf";
 
 export default function Experience() {
   return (
-    <section className="experience">
+    <section id="experience" className="experience">
       <div className="experience__container">
-        <h2 className="experience__header">Experience</h2>
-        <div>
+        <div className="experience__split-l">
+          <h2 className="experience__header">Experience</h2>
+        </div>
+        <div className="experience__split-r">
           <p className="experience__text">
             <a className="experience__resume" href={resume}>
               Download my resume
@@ -17,6 +19,7 @@ export default function Experience() {
             recently. I'm always searching to make meaningful connections which
             could lead to future opportunities!
           </p>
+          <div className="experience__current">Description coming soon...</div>
         </div>
       </div>
     </section>
