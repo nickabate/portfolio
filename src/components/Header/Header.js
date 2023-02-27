@@ -12,7 +12,7 @@ export default function Header() {
     <header id="header" className="header">
       <div className="header__container">
         <Link className="header__home" href="/">
-          Nick Abate
+          &lt; &#47;&gt; Nick Abate
         </Link>
         <ul className="header__links">
           <li

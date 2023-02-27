@@ -41,12 +41,12 @@ export default function Skills() {
             <img className="skills__icon" src={mysql} alt="mysql" />
             <img className="skills__icon" src={nodejs} alt="nodejs" />
             <img className="skills__icon" src={react} alt="react" />
+            <img className="skills__icon" src={netlify} alt="netlify" />
             <img className="skills__icon" src={sass} alt="sass" />
             <img className="skills__icon" src={figma} alt="figma" />
             <img className="skills__icon" src={vscode} alt="vscode" />
-            <img className="skills__icon" src={axios} alt="axios" />
-            <img className="skills__icon" src={netlify} alt="netlify" />
             <img className="skills__icon" src={npm} alt="npm" />
+            <img className="skills__icon" src={axios} alt="axios" />
             <img className="skills__icon" src={github} alt="github" />
             <img className="skills__icon" src={heroku} alt="heroku" />
             <img className="skills__icon" src={jira} alt="jira" />

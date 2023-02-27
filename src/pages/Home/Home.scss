@@ -16,5 +16,11 @@
     margin: 0 auto;
     display: block;
     cursor: pointer;
+
+    &:hover {
+      transition: all 0.1s;
+      filter: contrast(30%);
+      transform: scale(1.2);
+    }
   }
 }
