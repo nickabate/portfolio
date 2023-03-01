@@ -1,0 +1,50 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.experience {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 3rem 10rem;
+
+  &__container {
+    @include flex(row);
+    gap: 4rem;
+    // align-items: center;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+  }
+
+  &__split-l {
+    min-width: 17rem;
+  }
+
+  &__header {
+    background-color: $primary;
+    color: $secondary;
+    padding: 1rem;
+  }
+
+  &__text {
+    color: $tertiary;
+    text-align: center;
+  }
+
+  &__resume {
+    text-decoration: none;
+    font-weight: 600;
+    color: $primary;
+    // font-style: italic;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__current {
+    border: 0.1rem solid $secondary;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0.8rem;
+    margin: 3rem;
+    padding: 2rem;
+  }
+}

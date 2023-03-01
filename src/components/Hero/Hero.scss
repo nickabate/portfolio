@@ -1,0 +1,39 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.hero {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 2rem 10rem;
+  @include flex(row);
+  gap: 6rem;
+  justify-content: center;
+  height: 90vh;
+
+  &__image-container {
+    @include flex(row);
+    align-items: center;
+  }
+
+  &__image {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+  }
+
+  &__container {
+    width: 55rem;
+    @include flex(column);
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__greeting {
+    font-size: 3.3rem;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    color: $tertiary;
+    line-height: 3rem;
+  }
+}
