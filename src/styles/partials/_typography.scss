@@ -1,0 +1,26 @@
+// Primary font
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+//Alternate font
+
+@font-face {
+  font-family: "RedHat";
+  src: url("../../assets/fonts/RedHatDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RedHat";
+  src: url("../../assets/fonts/RedHatDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}

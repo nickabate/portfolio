@@ -1,0 +1,31 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.footer {
+  max-width: 128rem;
+  margin: 0 auto;
+  @include flex(column);
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 10rem;
+  gap: 2rem;
+
+  &__socials {
+    padding: 1rem 0;
+    @include flex(row);
+    gap: 2rem;
+  }
+
+  &__icon {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    filter: contrast(70%);
+
+    &:hover {
+      transition: all 0.1s;
+      filter: contrast(30%);
+      transform: scale(1.2);
+    }
+  }
+}
