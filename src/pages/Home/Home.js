@@ -23,9 +23,9 @@ export default function Home() {
         <Hero />
         <div className="home__divider"></div>
         <Portfolio />
-        <div className="home__divider"></div>
+        {/* <div className="home__divider"></div> */}
         <Skills />
-        <div className="home__divider"></div>
+        {/* <div className="home__divider"></div> */}
         <Experience />
       </main>
       <img
