@@ -5,17 +5,25 @@ import { Link } from "react-router-dom";
 import github from "../../assets/images/socials/github.png";
 import linkedin from "../../assets/images/socials/linkedin.png";
 import twitter from "../../assets/images/socials/twitter.png";
+import mail from "../../assets/images/socials/mail.png";
 
 export default function Footer() {
   return (
     <footer id="footer" className="footer">
       <h2>Get in touch with me!</h2>
       <div className="footer__socials">
-        <Link target="_blank" to="https://github.com/nickabate">
-          <img className="footer__icon" src={github} alt="github" />
-        </Link>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="mailto:nick.abate@outlook.com"
+        >
+          <img className="footer__icon" src={mail} alt="email" />
+        </a>
         <Link target="_blank" to="https://www.linkedin.com/in/nick-abate/">
           <img className="footer__icon" src={linkedin} alt="linkedin" />
+        </Link>
+        <Link target="_blank" to="https://github.com/nickabate">
+          <img className="footer__icon" src={github} alt="github" />
         </Link>
         <Link target="_blank" to="https://twitter.com/thatdevnick">
           <img className="footer__icon" src={twitter} alt="twitter" />
