@@ -10,7 +10,7 @@
     @include flex(row);
     gap: 4rem;
     // align-items: center;
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
     justify-content: space-between;
   }
 
@@ -46,5 +46,22 @@
     border-radius: 0.8rem;
     margin: 3rem;
     padding: 2rem;
+    @include flex(row);
+    gap: 2.4rem;
+
+    &-l {
+      @include flex(row);
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    width: 8rem;
+    height: 8rem;
+    filter: contrast(70%);
+  }
+
+  &__details {
+    margin: 2rem 0;
   }
 }
