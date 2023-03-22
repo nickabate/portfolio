@@ -27,6 +27,7 @@
   &__text {
     color: $tertiary;
     text-align: center;
+    line-height: 3rem;
   }
 
   &__resume {
@@ -63,5 +64,6 @@
 
   &__details {
     margin: 2rem 0;
+    line-height: 3rem;
   }
 }
