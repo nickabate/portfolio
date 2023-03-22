@@ -4,7 +4,7 @@
 .experience {
   max-width: 128rem;
   margin: 0 auto;
-  padding: 3rem 10rem 0;
+  padding: 3rem 10rem;
 
   &__container {
     @include flex(row);
