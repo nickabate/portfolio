@@ -4,7 +4,7 @@
 .skills {
   max-width: 128rem;
   margin: 0 auto;
-  padding: 3rem 10rem;
+  padding: 3rem 10rem 0;
 
   &__container {
     @include flex(row);
@@ -28,6 +28,7 @@
   &__text {
     color: $tertiary;
     text-align: center;
+    line-height: 3rem;
   }
 
   &__icons {
@@ -50,7 +51,7 @@
     filter: contrast(70%);
 
     &:hover {
-      transition: all 0.1s;
+      transition: all 0.5s;
       filter: contrast(30%);
       transform: scale(1.2);
     }
