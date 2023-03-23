@@ -4,11 +4,23 @@
 .hero {
   max-width: 128rem;
   margin: 0 auto;
-  padding: 0 2rem 10rem;
+  // padding: 10rem 0;
   @include flex(row);
-  gap: 6rem;
+  gap: 4rem;
   justify-content: center;
-  height: 90vh;
+  align-items: center;
+  height: 60rem;
+
+  @include tablet {
+    gap: 2.6rem;
+    height: 48rem;
+  }
+
+  @include mobile {
+    @include flex(column);
+    height: auto;
+    padding: 4rem 0 2rem;
+  }
 
   &__image-container {
     @include flex(row);
@@ -20,6 +32,16 @@
     height: 30rem;
     border-radius: 50%;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+
+    @include tablet {
+      width: 24rem;
+      height: 24rem;
+    }
+
+    @include mobile {
+      width: 18rem;
+      height: 18rem;
+    }
   }
 
   &__container {
@@ -27,14 +49,44 @@
     @include flex(column);
     align-items: flex-start;
     justify-content: center;
+
+    @include tablet {
+      width: 43rem;
+    }
+
+    @include mobile {
+      width: 90%;
+    }
   }
 
   &__greeting {
     font-size: 3.3rem;
     margin-bottom: 2rem;
+
+    @include tablet {
+      font-size: 2.8rem;
+      margin-bottom: 1.4rem;
+    }
+
+    @include mobile {
+      font-size: 2.2rem;
+      margin: 0 auto 1rem;
+      text-align: center;
+    }
   }
+
   &__text {
-    color: $tertiary;
+    color: $quaternary;
     line-height: 3rem;
+
+    @include tablet {
+      font-size: 1.6rem;
+    }
+
+    @include mobile {
+      font-size: 1.4rem;
+      text-align: center;
+      // max-width: ;
+    }
   }
 }

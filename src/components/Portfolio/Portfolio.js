@@ -25,14 +25,14 @@ export default function Portfolio() {
                 />
               </div>
               <div className="portfolio__details">
-                <h3>GLUCOAST</h3>
+                <h3 className="portfolio__subhead">GLUCOAST</h3>
                 <p className="portfolio__body">
                   GLUCOAST is an all-in-one dashboard to assist diabetics in
                   managing their glucose levels throughout the day.
                 </p>
                 <p className="portfolio__body">
-                  Tech stack includes: HTML, Css, Js, Sass, React, Node, and
-                  Express.
+                  Tech stack includes: HTML, CSS, JavaScript, Sass, React, Node,
+                  and Express.
                 </p>
                 <div className="portfolio__repo">
                   <a
