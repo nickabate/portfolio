@@ -10,6 +10,10 @@
     padding: 3rem 4rem 1rem;
   }
 
+  @include mobile {
+    padding: 2rem 1rem 0;
+  }
+
   &__container {
     @include flex(row);
     gap: 4rem;
@@ -26,6 +30,10 @@
 
   &__split-l {
     min-width: 17rem;
+
+    @include mobile {
+      min-width: auto;
+    }
   }
 
   &__header {
@@ -38,7 +46,12 @@
 
     @include tablet {
       width: 17rem;
-      font-size: 2.2rem;
+      // font-size: 2.2rem;
+    }
+
+    @include mobile {
+      padding: 0.6rem;
+      width: 14rem;
     }
   }
 
@@ -48,6 +61,10 @@
     line-height: 3rem;
     max-width: 87rem;
     margin: 0 auto;
+
+    @include mobile {
+      width: 90%;
+    }
   }
 
   &__resume {
@@ -74,9 +91,16 @@
       max-width: 81rem;
     }
 
+    @include mobile {
+      margin: 2rem;
+      gap: 1rem;
+      @include flex(column);
+    }
+
     &-l {
       @include flex(row);
       align-items: center;
+      justify-content: center;
     }
   }
 
@@ -84,10 +108,31 @@
     width: 8rem;
     height: 8rem;
     filter: contrast(70%);
+
+    @include mobile {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  &__subhead {
+    margin-bottom: 1rem;
+
+    @include mobile {
+      text-align: center;
+
+      &-det {
+        text-align: center;
+      }
+    }
   }
 
   &__details {
     margin: 2rem 0;
     line-height: 3rem;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 }

@@ -16,6 +16,12 @@
     height: 48rem;
   }
 
+  @include mobile {
+    @include flex(column);
+    height: auto;
+    padding: 4rem 0 2rem;
+  }
+
   &__image-container {
     @include flex(row);
     align-items: center;
@@ -31,6 +37,11 @@
       width: 24rem;
       height: 24rem;
     }
+
+    @include mobile {
+      width: 18rem;
+      height: 18rem;
+    }
   }
 
   &__container {
@@ -42,6 +53,10 @@
     @include tablet {
       width: 43rem;
     }
+
+    @include mobile {
+      width: 90%;
+    }
   }
 
   &__greeting {
@@ -52,6 +67,12 @@
       font-size: 2.8rem;
       margin-bottom: 1.4rem;
     }
+
+    @include mobile {
+      font-size: 2.2rem;
+      margin: 0 auto 1rem;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -60,6 +81,12 @@
 
     @include tablet {
       font-size: 1.6rem;
+    }
+
+    @include mobile {
+      font-size: 1.4rem;
+      text-align: center;
+      // max-width: ;
     }
   }
 }

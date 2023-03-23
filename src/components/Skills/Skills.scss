@@ -10,6 +10,10 @@
     padding: 3rem 4rem 0;
   }
 
+  @include mobile {
+    padding: 2rem 1rem 0;
+  }
+
   &__container {
     @include flex(row);
     // flex-direction: row-reverse;
@@ -26,6 +30,10 @@
 
   &__split-l {
     min-width: 17rem;
+
+    @include mobile {
+      min-width: auto;
+    }
   }
 
   &__header {
@@ -38,7 +46,12 @@
 
     @include tablet {
       width: 17rem;
-      font-size: 2.2rem;
+      // font-size: 2.2rem;
+    }
+
+    @include mobile {
+      padding: 0.6rem;
+      width: 14rem;
     }
   }
 
@@ -67,6 +80,11 @@
       gap: 3rem;
       max-width: 81rem;
     }
+
+    @include mobile {
+      margin: 2rem;
+      gap: 1.6rem;
+    }
   }
 
   &__icon {
@@ -77,6 +95,11 @@
     @include tablet {
       width: 5rem;
       height: 5rem;
+    }
+
+    @include mobile {
+      width: 4.6rem;
+      height: 4.6rem;
     }
 
     &:hover {

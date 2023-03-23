@@ -49,8 +49,12 @@ export default function Experience() {
               </a>
             </div>
             <div>
-              <h3>BrainStation - Software Engineering Bootcamp</h3>
-              <h4>Remote Teaching Assistant</h4>
+              <h3 className="experience__subhead">
+                BrainStation - Software Engineering Bootcamp
+              </h3>
+              <h4 className="experience__subhead-det">
+                Remote Teaching Assistant
+              </h4>
               <p className="experience__details">
                 Upon completion of my BrainStation Software Engineering
                 Bootcamp, I was selected from a cohort of 30 students to work
