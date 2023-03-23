@@ -7,8 +7,13 @@
   @include flex(column);
   justify-content: center;
   align-items: center;
-  padding: 3rem 10rem;
+  padding: 3rem 0;
   gap: 2rem;
+
+  @include tablet {
+    gap: 1.6rem;
+    padding: 2rem 0;
+  }
 
   &__socials {
     padding: 1rem 0;
@@ -22,8 +27,13 @@
     height: 4rem;
     filter: contrast(70%);
 
+    @include tablet {
+      width: 3rem;
+      height: 3rem;
+    }
+
     &:hover {
-      transition: all 0.1s;
+      transition: all 0.3s;
       filter: contrast(30%);
       transform: scale(1.2);
     }

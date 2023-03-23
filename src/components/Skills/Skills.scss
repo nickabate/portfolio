@@ -6,12 +6,22 @@
   margin: 0 auto;
   padding: 3rem 10rem 0;
 
+  @include tablet {
+    padding: 3rem 4rem 0;
+  }
+
   &__container {
     @include flex(row);
     // flex-direction: row-reverse;
     gap: 4rem;
     // align-items: center;
     // margin-bottom: 4rem;
+
+    @include tablet {
+      @include flex(column);
+      align-items: center;
+      gap: 2rem;
+    }
   }
 
   &__split-l {
@@ -23,12 +33,21 @@
     color: $secondary;
     padding: 1rem;
     text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+
+    @include tablet {
+      width: 17rem;
+      font-size: 2.2rem;
+    }
   }
 
   &__text {
     color: $tertiary;
     text-align: center;
     line-height: 3rem;
+    max-width: 87rem;
+    margin: 0 auto;
   }
 
   &__icons {
@@ -43,6 +62,11 @@
     border-radius: 0.8rem;
     margin: 3rem;
     padding: 2rem;
+
+    @include tablet {
+      gap: 3rem;
+      max-width: 81rem;
+    }
   }
 
   &__icon {
@@ -50,8 +74,13 @@
     height: 6rem;
     filter: contrast(70%);
 
+    @include tablet {
+      width: 5rem;
+      height: 5rem;
+    }
+
     &:hover {
-      transition: all 0.5s;
+      transition: all 0.3s;
       filter: contrast(30%);
       transform: scale(1.2);
     }

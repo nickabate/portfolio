@@ -6,12 +6,22 @@
   margin: 0 auto;
   padding: 3rem 10rem;
 
+  @include tablet {
+    padding: 3rem 4rem 1rem;
+  }
+
   &__container {
     @include flex(row);
     gap: 4rem;
     // align-items: center;
     // margin-bottom: 4rem;
     justify-content: space-between;
+
+    @include tablet {
+      @include flex(column);
+      align-items: center;
+      gap: 2rem;
+    }
   }
 
   &__split-l {
@@ -23,12 +33,21 @@
     color: $secondary;
     padding: 1rem;
     text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+
+    @include tablet {
+      width: 17rem;
+      font-size: 2.2rem;
+    }
   }
 
   &__text {
     color: $tertiary;
     text-align: center;
     line-height: 3rem;
+    max-width: 87rem;
+    margin: 0 auto;
   }
 
   &__resume {
@@ -50,6 +69,10 @@
     padding: 2rem;
     @include flex(row);
     gap: 2.4rem;
+
+    @include tablet {
+      max-width: 81rem;
+    }
 
     &-l {
       @include flex(row);

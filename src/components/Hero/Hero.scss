@@ -4,15 +4,16 @@
 .hero {
   max-width: 128rem;
   margin: 0 auto;
-  padding: 0 2rem 10rem;
+  // padding: 10rem 0;
   @include flex(row);
-  gap: 6rem;
+  gap: 4rem;
   justify-content: center;
-  // height: 90vh;
-  height: 75rem;
+  align-items: center;
+  height: 60rem;
 
   @include tablet {
     gap: 2.6rem;
+    height: 48rem;
   }
 
   &__image-container {
@@ -49,6 +50,7 @@
 
     @include tablet {
       font-size: 2.8rem;
+      margin-bottom: 1.4rem;
     }
   }
 
@@ -57,7 +59,7 @@
     line-height: 3rem;
 
     @include tablet {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
 }

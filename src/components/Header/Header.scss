@@ -31,6 +31,11 @@
     @include tablet {
       font-size: 2rem;
     }
+
+    &:hover {
+      color: $tertiary;
+      transition: all 0.3s;
+    }
   }
 
   &__links {
@@ -54,6 +59,11 @@
     cursor: pointer;
     border-bottom: 0.2rem solid $secondary;
 
+    @include tablet {
+      font-size: 1.6rem;
+      width: 9rem;
+    }
+
     &:hover {
       font-weight: 600;
       border-bottom: 0.2rem solid $primary;
@@ -61,10 +71,6 @@
 
     &--mid {
       margin-right: 1rem;
-    }
-
-    @include tablet {
-      font-size: 1.6rem;
     }
   }
 
@@ -79,9 +85,12 @@
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 0;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 
     &:hover {
       background-color: $tertiary;
+      transition: all 0.3s;
     }
 
     @include tablet {
