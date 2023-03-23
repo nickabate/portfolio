@@ -11,11 +11,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
+
+    @include tablet {
+      padding: 2rem;
+    }
+
+    @include mobile {
+      padding: 1rem;
+    }
   }
-  // &__nav {
-  //   @include flex(row);
-  //   gap: 6rem;
-  // }
 
   &__home {
     color: $primary;
@@ -24,13 +28,18 @@
     font-weight: 600;
     font-size: 2.4rem;
 
-    &:hover {
+    @include tablet {
+      font-size: 2rem;
     }
   }
 
   &__links {
     @include flex(row);
     gap: 2rem;
+
+    @include tablet {
+      gap: 1rem;
+    }
   }
 
   &__link {
@@ -53,6 +62,10 @@
     &--mid {
       margin-right: 1rem;
     }
+
+    @include tablet {
+      font-size: 1.6rem;
+    }
   }
 
   &__btn {
@@ -69,6 +82,10 @@
 
     &:hover {
       background-color: $tertiary;
+    }
+
+    @include tablet {
+      font-size: 1.4rem;
     }
   }
 }
