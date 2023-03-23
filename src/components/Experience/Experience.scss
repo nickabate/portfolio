@@ -6,28 +6,65 @@
   margin: 0 auto;
   padding: 3rem 10rem;
 
+  @include tablet {
+    padding: 3rem 4rem 1rem;
+  }
+
+  @include mobile {
+    padding: 2rem 1rem 0;
+  }
+
   &__container {
     @include flex(row);
     gap: 4rem;
     // align-items: center;
     // margin-bottom: 4rem;
     justify-content: space-between;
+
+    @include tablet {
+      @include flex(column);
+      align-items: center;
+      gap: 2rem;
+    }
   }
 
   &__split-l {
     min-width: 17rem;
+
+    @include mobile {
+      min-width: auto;
+    }
   }
 
   &__header {
     background-color: $primary;
     color: $secondary;
     padding: 1rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+
+    @include tablet {
+      width: 17rem;
+      // font-size: 2.2rem;
+    }
+
+    @include mobile {
+      padding: 0.6rem;
+      width: 14rem;
+    }
   }
 
   &__text {
-    color: $tertiary;
+    color: $quaternary;
     text-align: center;
     line-height: 3rem;
+    max-width: 87rem;
+    margin: 0 auto;
+
+    @include mobile {
+      width: 90%;
+    }
   }
 
   &__resume {
@@ -50,9 +87,20 @@
     @include flex(row);
     gap: 2.4rem;
 
+    @include tablet {
+      max-width: 81rem;
+    }
+
+    @include mobile {
+      margin: 2rem;
+      gap: 1rem;
+      @include flex(column);
+    }
+
     &-l {
       @include flex(row);
       align-items: center;
+      justify-content: center;
     }
   }
 
@@ -60,10 +108,31 @@
     width: 8rem;
     height: 8rem;
     filter: contrast(70%);
+
+    @include mobile {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  &__subhead {
+    margin-bottom: 1rem;
+
+    @include mobile {
+      text-align: center;
+
+      &-det {
+        text-align: center;
+      }
+    }
   }
 
   &__details {
     margin: 2rem 0;
     line-height: 3rem;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 }

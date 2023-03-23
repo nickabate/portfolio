@@ -6,15 +6,33 @@
   margin: 0 auto;
   padding: 3rem 10rem 0;
 
+  @include tablet {
+    padding: 3rem 4rem 0;
+  }
+
+  @include mobile {
+    padding: 2rem 1rem 0;
+  }
+
   &__container {
     @include flex(row);
     gap: 4rem;
     // align-items: center;
     // margin-bottom: 4rem;
+
+    @include tablet {
+      @include flex(column);
+      align-items: center;
+      gap: 2rem;
+    }
   }
 
   &__split-l {
     min-width: 17rem;
+
+    @include mobile {
+      min-width: auto;
+    }
   }
 
   &__header {
@@ -22,12 +40,33 @@
     color: $secondary;
     padding: 1rem;
     text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+
+    @include tablet {
+      width: 17rem;
+    }
+
+    @include mobile {
+      padding: 0.6rem;
+      width: 14rem;
+    }
   }
 
   &__text {
-    color: $tertiary;
+    color: $quaternary;
     text-align: center;
     line-height: 3rem;
+
+    @include tablet {
+      // font-size: 1.6rem;
+      max-width: 87rem;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      width: 90%;
+    }
   }
 
   &__projects {
@@ -38,32 +77,69 @@
     // margin: 0 auto;
     padding: 2rem;
     // max-width: 80rem;
+
+    @include tablet {
+      max-width: 81rem;
+    }
+
+    @include mobile {
+      margin: 2rem;
+    }
   }
 
   &__showcase {
     @include flex(row);
     gap: 2rem;
     align-items: center;
+
+    @include mobile {
+      @include flex(column);
+      gap: 1rem;
+    }
   }
 
   &__sample {
     width: 40%;
-
-    background-color: aqua;
+    @include flex(row);
+    justify-content: center;
   }
 
   &__image {
     display: block;
     width: 100%;
+
+    @include tablet {
+      max-width: 28rem;
+      max-height: 28rem;
+    }
+
+    @include mobile {
+      min-width: 16rem;
+      min-height: 16rem;
+    }
   }
 
   &__details {
     width: 60%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__subhead {
+    text-align: center;
   }
 
   &__body {
     line-height: 3rem;
     margin-top: 1.2rem;
+
+    @include mobile {
+      text-align: center;
+      max-width: 50rem;
+      margin: 1.2rem auto;
+    }
   }
 
   &__repo {
@@ -71,6 +147,10 @@
     align-items: center;
     margin-top: 2rem;
     // gap: 1rem;
+
+    @include mobile {
+      @include flex(column);
+    }
   }
 
   &__github {
@@ -78,7 +158,7 @@
     width: 3rem;
     height: 3rem;
     &:hover {
-      transition: all 0.5s;
+      transition: all 0.3s;
       filter: contrast(30%);
     }
   }
@@ -90,6 +170,11 @@
     margin-left: 2rem;
     padding-right: 2rem;
 
+    @include mobile {
+      margin: 0;
+      padding: 0;
+    }
+
     &:hover {
       border-bottom: 0.2rem solid rgb(37, 40, 37);
     }
@@ -99,6 +184,11 @@
       margin: 0;
       padding-left: 2rem;
       padding-right: 0;
+
+      @include mobile {
+        padding: 0;
+        border-left: none;
+      }
     }
   }
 }

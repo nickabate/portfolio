@@ -11,11 +11,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
+
+    @include tablet {
+      padding: 2rem;
+    }
+
+    @include mobile {
+      padding: 1rem;
+      @include flex(column);
+      gap: 1rem;
+    }
   }
-  // &__nav {
-  //   @include flex(row);
-  //   gap: 6rem;
-  // }
 
   &__home {
     color: $primary;
@@ -24,13 +30,23 @@
     font-weight: 600;
     font-size: 2.4rem;
 
+    @include tablet {
+      font-size: 2rem;
+    }
+
     &:hover {
+      color: $tertiary;
+      transition: all 0.3s;
     }
   }
 
   &__links {
     @include flex(row);
     gap: 2rem;
+
+    @include tablet {
+      gap: 1rem;
+    }
   }
 
   &__link {
@@ -44,6 +60,15 @@
     font-size: 2rem;
     cursor: pointer;
     border-bottom: 0.2rem solid $secondary;
+
+    @include tablet {
+      font-size: 1.6rem;
+      width: 9rem;
+    }
+
+    @include mobile {
+      width: 8rem;
+    }
 
     &:hover {
       font-weight: 600;
@@ -66,9 +91,20 @@
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 0;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 
     &:hover {
       background-color: $tertiary;
+      transition: all 0.3s;
+    }
+
+    @include tablet {
+      font-size: 1.4rem;
+    }
+
+    @include mobile {
+      height: 2.6rem;
     }
   }
 }
