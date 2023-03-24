@@ -10,9 +10,10 @@ export default function Hero() {
       <div className="hero__container">
         <h1 className="hero__greeting">Hi! Welcome to my page.</h1>
         <p className="hero__text">
-          I'm Nick Abate, a software engineer and bootcamp graduate. I'm
-          pursuing software engineering to come up with innovative solutions to
-          everyday problems experienced by everyday people.
+          I'm Nick Abate, a Chartered Professional Accountant turned Software
+          Engineer and a bootcamp graduate. I'm pursuing software engineering to
+          come up with innovative solutions to everyday problems experienced by
+          everyday people.
         </p>
       </div>
     </section>
