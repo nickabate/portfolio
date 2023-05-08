@@ -18,6 +18,7 @@ import heroku from "../../assets/images/tech/heroku.png";
 import netlify from "../../assets/images/tech/netlify.png";
 import jira from "../../assets/images/tech/jira.png";
 import github from "../../assets/images/tech/github.png";
+import firebase from "../../assets/images/tech/firebase.png";
 
 export default function Skills() {
   return (
@@ -50,6 +51,7 @@ export default function Skills() {
             <img className="skills__icon" src={github} alt="github" />
             <img className="skills__icon" src={heroku} alt="heroku" />
             <img className="skills__icon" src={jira} alt="jira" />
+            <img className="skills__icon" src={firebase} alt="firebase" />
           </div>
         </div>
       </div>
