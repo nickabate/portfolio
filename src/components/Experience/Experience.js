@@ -1,7 +1,7 @@
 import "./Experience.scss";
 
 // Resume
-import resume from "../../assets/files/Nick-Abate-Resume-May-2023.pdf";
+import resume from "../../assets/files/Nick-Abate-Resume-v1.pdf";
 import brainstation from "../../assets/images/tech/brainstation.png";
 
 export default function Experience() {
