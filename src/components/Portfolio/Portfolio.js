@@ -1,6 +1,6 @@
 import "./Portfolio.scss";
 import glucoast from "../../assets/images/projects/glucoast.png";
-import github from "../../assets/images/tech/github.png";
+import github from "../../assets/images/icons/github.png";
 
 export default function Portfolio() {
   return (

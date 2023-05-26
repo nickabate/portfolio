@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="hero__container">
         <h1 className="hero__greeting">Hi! Welcome to my page.</h1>
         <p className="hero__text">
-          I'm Nick Abate, a self-taught developer turned Software Engineer
+          I'm Nick Abate, a self-taught developer turned Software Engineering
           bootcamp graduate and former Chartered Professional Accountant. I'm
           pursuing software engineering to come up with innovative solutions to
           everyday problems experienced by everyday people.

@@ -1,8 +1,8 @@
 import "./Experience.scss";
 
 // Resume
-import resume from "../../assets/files/Nick-Abate-Resume-v1.pdf";
-import brainstation from "../../assets/images/tech/brainstation.png";
+import resume from "../../assets/files/Nick-Abate-Resume.pdf";
+import brainstation from "../../assets/images/icons/brainstation.png";
 
 export default function Experience() {
   return (
@@ -59,8 +59,8 @@ export default function Experience() {
                 Upon completion of my BrainStation Software Engineering
                 Bootcamp, I was selected from a cohort of 30 students to work
                 with BrainStation in guiding the next generation of software
-                engineers by working as a Teaching Assistant. This is a remote
-                full-time contract position ending in May 2023.
+                engineers by working as a Teaching Assistant. This was a remote
+                full-time contract position which ended in May 2023.
               </p>
             </div>
           </div>
