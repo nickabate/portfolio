@@ -1,12 +1,11 @@
 import { useEffect } from "react";
 import Aos from "aos";
 
-import "aos/dist/aos.css";
-import "./Experience.scss";
-
-// Resume
 import resume from "../../assets/files/Nick-Abate-Resume.pdf";
 import brainstation from "../../assets/images/icons/brainstation.png";
+
+import "aos/dist/aos.css";
+import "./Experience.scss";
 
 export default function Experience() {
   useEffect(() => {
