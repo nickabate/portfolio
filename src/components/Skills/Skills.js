@@ -1,10 +1,17 @@
+import { useEffect } from "react";
 import { skillsIcons } from "../../data/skills.icons";
+import Aos from "aos";
 
+import "aos/dist/aos.css";
 import "./Skills.scss";
 
 export default function Skills() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <section id="skills" className="skills">
+    <section data-aos="fade-left" id="skills" className="skills">
       <div className="skills__container">
         <div className="skills__split-l">
           <h2 className="skills__header">Skills</h2>
@@ -18,6 +25,7 @@ export default function Skills() {
           <div className="skills__icons">
             {skillsIcons.map((skill) => (
               <img
+                key={skill.name}
                 className="skills__icon"
                 src={skill.image}
                 alt={skill.name}
