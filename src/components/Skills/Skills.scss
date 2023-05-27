@@ -16,10 +16,7 @@
 
   &__container {
     @include flex(row);
-    // flex-direction: row-reverse;
     gap: 4rem;
-    // align-items: center;
-    // margin-bottom: 4rem;
 
     @include tablet {
       @include flex(column);
@@ -46,7 +43,6 @@
 
     @include tablet {
       width: 17rem;
-      // font-size: 2.2rem;
     }
 
     @include mobile {

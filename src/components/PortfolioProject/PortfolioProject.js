@@ -1,6 +1,5 @@
 import githubIcon from "../../assets/images/icons/github.png";
 import linkIcon from "../../assets/images/icons/link.png";
-import "./PortfolioProject.scss";
 import { v4 } from "uuid";
 
 const PortfolioProject = ({ project }) => {

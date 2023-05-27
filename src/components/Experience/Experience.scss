@@ -17,8 +17,6 @@
   &__container {
     @include flex(row);
     gap: 4rem;
-    // align-items: center;
-    // margin-bottom: 4rem;
     justify-content: space-between;
 
     @include tablet {
@@ -46,7 +44,6 @@
 
     @include tablet {
       width: 17rem;
-      // font-size: 2.2rem;
     }
 
     @include mobile {
@@ -71,7 +68,6 @@
     text-decoration: none;
     font-weight: 600;
     color: $primary;
-    // font-style: italic;
 
     &:hover {
       text-decoration: underline;
