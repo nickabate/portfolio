@@ -1,12 +1,20 @@
+import { useEffect } from "react";
+import Aos from "aos";
+
+import "aos/dist/aos.css";
 import "./Experience.scss";
 
 // Resume
-import resume from "../../assets/files/Nick-Abate-Resume-v1.pdf";
-import brainstation from "../../assets/images/tech/brainstation.png";
+import resume from "../../assets/files/Nick-Abate-Resume.pdf";
+import brainstation from "../../assets/images/icons/brainstation.png";
 
 export default function Experience() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <section id="experience" className="experience">
+    <section data-aos="fade-left" id="experience" className="experience">
       <div className="experience__container">
         <div className="experience__split-l">
           <h2 className="experience__header">Experience</h2>
@@ -32,7 +40,8 @@ export default function Experience() {
             </a>{" "}
             to see my past work experience. Below is what I've been up to
             recently. I'm always searching to make meaningful connections which
-            could lead to future opportunities!
+            could lead to future opportunities and am currently looking for a
+            Software Engineering role!
           </p>
           <div className="experience__current">
             <div className="experience__current-l">
@@ -59,8 +68,8 @@ export default function Experience() {
                 Upon completion of my BrainStation Software Engineering
                 Bootcamp, I was selected from a cohort of 30 students to work
                 with BrainStation in guiding the next generation of software
-                engineers by working as a Teaching Assistant. This is a remote
-                full-time contract position ending in May 2023.
+                engineers by working as a Teaching Assistant. This was a remote
+                full-time contract position which ended in May 2023.
               </p>
             </div>
           </div>

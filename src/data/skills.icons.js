@@ -1,0 +1,26 @@
+export const skillsIcons = [
+  { name: "Axios", image: require("../assets/images/skills/axios.png") },
+  { name: "CSS", image: require("../assets/images/skills/css.png") },
+  {
+    name: "Express.js",
+    image: require("../assets/images/skills/expressjs.png"),
+  },
+  { name: "Figma", image: require("../assets/images/skills/figma.png") },
+  { name: "Firebase", image: require("../assets/images/skills/firebase.png") },
+  { name: "Git", image: require("../assets/images/skills/git.png") },
+  { name: "GitHub", image: require("../assets/images/skills/github.png") },
+  { name: "Heroku", image: require("../assets/images/skills/heroku.png") },
+  { name: "HTML", image: require("../assets/images/skills/html.png") },
+  {
+    name: "JavaScript",
+    image: require("../assets/images/skills/javascript.png"),
+  },
+  { name: "Jira", image: require("../assets/images/skills/jira.png") },
+  { name: "MySQL", image: require("../assets/images/skills/mysql.png") },
+  { name: "Netlify", image: require("../assets/images/skills/netlify.png") },
+  { name: "Node.js", image: require("../assets/images/skills/nodejs.png") },
+  { name: "npm", image: require("../assets/images/skills/npm.png") },
+  { name: "React", image: require("../assets/images/skills/react.png") },
+  { name: "Sass", image: require("../assets/images/skills/sass.png") },
+  { name: "VS Code", image: require("../assets/images/skills/vscode.png") },
+];
