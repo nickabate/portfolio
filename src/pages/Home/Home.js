@@ -7,7 +7,7 @@ import Skills from "../../components/Skills/Skills";
 import Experience from "../../components/Experience/Experience";
 import Footer from "../../components/Footer/Footer";
 
-import scroll from "../../assets/images/tech/scroll.png";
+import scroll from "../../assets/images/icons/scroll.png";
 
 export default function Home() {
   const handleClickScroll = (id) => {
