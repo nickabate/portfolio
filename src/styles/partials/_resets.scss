@@ -17,9 +17,9 @@ html {
 body {
   font-size: 1.8rem;
   font-family: $font-stack;
-  //   color: rgb(61, 65, 63);
   color: $primary;
   background-color: $secondary;
+  overflow-x: hidden;
 
   @include tablet {
     font-size: 1.6rem;
