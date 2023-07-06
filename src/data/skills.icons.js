@@ -20,7 +20,12 @@ export const skillsIcons = [
   { name: "Netlify", image: require("../assets/images/skills/netlify.png") },
   { name: "Node.js", image: require("../assets/images/skills/nodejs.png") },
   { name: "npm", image: require("../assets/images/skills/npm.png") },
+  {
+    name: "PostgreSQL",
+    image: require("../assets/images/skills/postgresql.png"),
+  },
   { name: "React", image: require("../assets/images/skills/react.png") },
+  { name: "Redux", image: require("../assets/images/skills/redux.png") },
   { name: "Sass", image: require("../assets/images/skills/sass.png") },
   { name: "VS Code", image: require("../assets/images/skills/vscode.png") },
 ];
