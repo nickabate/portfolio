@@ -18,4 +18,24 @@ export const portfolioProjects = [
     link: "https://nick-abate-glucoast.netlify.app/",
     image: require("../assets/images/projects/glucoast.png"),
   },
+  {
+    id: 1,
+    title: "CRWN Clothing",
+    description:
+      "CRWN Clothing is an ecommerce store built with React utilizing third party services and libraries like Firebase, Redux and Stripe.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Sass",
+      "React",
+      "Firebase",
+      "Redux",
+      "Stripe",
+      "Netlify",
+    ],
+    github: "https://github.com/nickabate/react-ecommerce-site",
+    link: "https://nick-abate-ecommerce-app.netlify.app/",
+    image: require("../assets/images/projects/crwn-clothing.png"),
+  },
 ];

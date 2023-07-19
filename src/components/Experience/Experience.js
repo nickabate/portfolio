@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Aos from "aos";
 
-import resume from "../../assets/files/Nick-Abate-Resume.pdf";
+import resume from "../../assets/files/Nick-Abate-Resume-July-2023.pdf";
 import brainstation from "../../assets/images/icons/brainstation.png";
 
 import "aos/dist/aos.css";
