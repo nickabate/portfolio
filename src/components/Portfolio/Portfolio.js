@@ -25,7 +25,10 @@ export default function Portfolio() {
           </p>
           <div className="portfolio__projects">
             {portfolioProjects.map((project) => (
-              <PortfolioProject key={project.id} project={project} />
+              <>
+                <PortfolioProject key={project.id} project={project} />
+                <div className="portfolio__divider"></div>
+              </>
             ))}
           </div>
         </div>

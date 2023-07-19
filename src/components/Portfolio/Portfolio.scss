@@ -203,4 +203,11 @@
     @include flex(row);
     align-items: center;
   }
+
+  .portfolio__divider:not(:last-child) {
+    width: 6rem;
+    height: 0rem;
+    border-top: 0.5rem dotted $tertiary;
+    margin: 2.4rem auto;
+  }
 }
