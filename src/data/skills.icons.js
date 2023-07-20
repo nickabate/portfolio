@@ -16,6 +16,7 @@ export const skillsIcons = [
     image: require("../assets/images/skills/javascript.png"),
   },
   { name: "Jira", image: require("../assets/images/skills/jira.png") },
+  { name: "Knex.js", image: require("../assets/images/skills/knex.png") },
   { name: "MySQL", image: require("../assets/images/skills/mysql.png") },
   { name: "Netlify", image: require("../assets/images/skills/netlify.png") },
   { name: "Node.js", image: require("../assets/images/skills/nodejs.png") },
