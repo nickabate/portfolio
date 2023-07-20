@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { portfolioProjects } from "../../data/portfolio.projects";
 import PortfolioProject from "../PortfolioProject/PortfolioProject";
 import Aos from "aos";
+import { v4 } from "uuid";
 
 import "aos/dist/aos.css";
 import "./Portfolio.scss";
@@ -25,10 +26,10 @@ export default function Portfolio() {
           </p>
           <div className="portfolio__projects">
             {portfolioProjects.map((project) => (
-              <>
-                <PortfolioProject key={project.id} project={project} />
+              <React.Fragment key={v4()}>
+                <PortfolioProject project={project} />
                 <div className="portfolio__divider"></div>
-              </>
+              </React.Fragment>
             ))}
           </div>
         </div>

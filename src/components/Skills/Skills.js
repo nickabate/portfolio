@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { skillsIcons } from "../../data/skills.icons";
 import Aos from "aos";
 
@@ -6,6 +6,12 @@ import "aos/dist/aos.css";
 import "./Skills.scss";
 
 export default function Skills() {
+  const [skilltext, setSkilltext] = useState("Click a skill below!");
+
+  const skillDisplay = (e) => {
+    setSkilltext(`I love to use... ${e.target.alt}!`);
+  };
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -22,6 +28,8 @@ export default function Skills() {
             worked with on my journey include the following. I'm always looking
             to expand my toolset and learn something new!
           </p>
+
+          <h3 className="skills__shout">{skilltext}</h3>
           <div className="skills__icons">
             {skillsIcons.map((skill) => (
               <img
@@ -29,6 +37,7 @@ export default function Skills() {
                 className="skills__icon"
                 src={skill.image}
                 alt={skill.name}
+                onClick={skillDisplay}
               />
             ))}
           </div>

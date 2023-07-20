@@ -3,7 +3,7 @@ export const portfolioProjects = [
     id: 1,
     title: "GLUCOAST",
     description:
-      "GLUCOAST is an all-in-one dashboard to assist diabetics in managing their glucose levels throughout the day.",
+      "GLUCOAST is an all-in-one dashboard to assist diabetics in managing their glucose levels throughout the day. This project is optimzed for mobile, tablet and desktop viewport sizes.",
     tech: [
       "HTML",
       "CSS",
@@ -19,10 +19,10 @@ export const portfolioProjects = [
     image: require("../assets/images/projects/glucoast.png"),
   },
   {
-    id: 1,
+    id: 2,
     title: "CRWN Clothing",
     description:
-      "CRWN Clothing is an ecommerce store built with React utilizing third party services and libraries like Firebase, Redux and Stripe.",
+      "CRWN Clothing is an ecommerce store built with React utilizing third party services and libraries like Firebase, Redux and Stripe. This project is optimized on desktop or tablet viewports.",
     tech: [
       "HTML",
       "CSS",
@@ -37,5 +37,27 @@ export const portfolioProjects = [
     github: "https://github.com/nickabate/react-ecommerce-site",
     link: "https://nick-abate-ecommerce-app.netlify.app/",
     image: require("../assets/images/projects/crwn-clothing.png"),
+  },
+  {
+    id: 3,
+    title: "Face Finder",
+    description:
+      "Face Finder utilizes a machine learning API to detect faces in online images, and a user database with entries in a PostgreSQL database through Node and Express. This project is optimized on desktop or tablet viewports.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Sass",
+      "React",
+      "Node",
+      "Express",
+      "PostgreSQL",
+      "Knex",
+      "Machine Learning",
+      "Clarifai API",
+    ],
+    github: "https://github.com/nickabate/facefinder-client",
+    link: "https://nick-abate-face-finder.netlify.app/",
+    image: require("../assets/images/projects/facefinder.png"),
   },
 ];
