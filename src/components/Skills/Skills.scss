@@ -59,6 +59,16 @@
     margin: 0 auto;
   }
 
+  &__shout {
+    text-align: center;
+    color: $primary;
+    margin: 3rem auto 0;
+
+    @include mobile {
+      margin: 2rem auto 0;
+    }
+  }
+
   &__icons {
     @include flex(row);
     justify-content: center;
