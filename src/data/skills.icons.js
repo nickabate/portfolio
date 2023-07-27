@@ -9,6 +9,7 @@ export const skillsIcons = [
   { name: "Firebase", image: require("../assets/images/skills/firebase.png") },
   { name: "Git", image: require("../assets/images/skills/git.png") },
   { name: "GitHub", image: require("../assets/images/skills/github.png") },
+  { name: "GraphQL", image: require("../assets/images/skills/graphql.png") },
   { name: "Heroku", image: require("../assets/images/skills/heroku.png") },
   { name: "HTML", image: require("../assets/images/skills/html.png") },
   {
@@ -28,5 +29,9 @@ export const skillsIcons = [
   { name: "React", image: require("../assets/images/skills/react.png") },
   { name: "Redux", image: require("../assets/images/skills/redux.png") },
   { name: "Sass", image: require("../assets/images/skills/sass.png") },
+  {
+    name: "TypeScript",
+    image: require("../assets/images/skills/typescript.png"),
+  },
   { name: "VS Code", image: require("../assets/images/skills/vscode.png") },
 ];
