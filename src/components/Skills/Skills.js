@@ -17,7 +17,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <section data-aos="fade" id="skills" className="skills">
+    <section data-aos="fade-left" id="skills" className="skills">
       <div className="skills__container">
         <div className="skills__split-l">
           <h2 className="skills__header">Skills</h2>

@@ -13,7 +13,7 @@ export default function Experience() {
   }, []);
 
   return (
-    <section data-aos="fade" id="experience" className="experience">
+    <section data-aos="fade-left" id="experience" className="experience">
       <div className="experience__container">
         <div className="experience__split-l">
           <h2 className="experience__header">Experience</h2>
