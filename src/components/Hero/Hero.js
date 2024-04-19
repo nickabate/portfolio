@@ -16,7 +16,7 @@ export default function Hero() {
         <img className="hero__image" src={nick} alt="Nick Abate" />
       </div>
       <div className="hero__container">
-        <h1 className="hero__greeting">Hi! Welcome to my page.</h1>
+        <h1 className="hero__greeting">Hello! Welcome to my page.</h1>
         <p className="hero__text">
           I'm Nick Abate, a self-taught developer turned Software Engineering
           bootcamp graduate and former Chartered Professional Accountant. I'm

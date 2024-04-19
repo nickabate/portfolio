@@ -1,0 +1,141 @@
+.experience {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 3rem 10rem;
+}
+@media screen and (max-width: 1279px) {
+  .experience {
+    padding: 3rem 4rem 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .experience {
+    padding: 2rem 1rem 0;
+  }
+}
+.experience__container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1279px) {
+  .experience__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.experience__split-l {
+  min-width: 17rem;
+}
+@media screen and (max-width: 767px) {
+  .experience__split-l {
+    min-width: auto;
+  }
+}
+.experience__header {
+  background-color: rgb(37, 40, 37);
+  color: rgb(251, 250, 253);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1279px) {
+  .experience__header {
+    width: 17rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .experience__header {
+    padding: 0.6rem;
+    width: 14rem;
+  }
+}
+.experience__text {
+  color: rgb(86, 87, 88);
+  text-align: center;
+  line-height: 3rem;
+  max-width: 87rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .experience__text {
+    width: 90%;
+  }
+}
+.experience__resume {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(37, 40, 37);
+}
+.experience__resume:hover {
+  text-decoration: underline;
+}
+.experience__current {
+  border: 0.1rem solid rgb(251, 250, 253);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  margin: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+@media screen and (max-width: 1279px) {
+  .experience__current {
+    max-width: 81rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .experience__current {
+    margin: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.experience__current-l {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.experience__logo {
+  width: 8rem;
+  height: 8rem;
+  filter: contrast(70%);
+}
+@media screen and (max-width: 767px) {
+  .experience__logo {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+.experience__logo:hover {
+  transition: all 0.3s;
+  filter: contrast(30%);
+  transform: scale(1.2);
+}
+.experience__subhead {
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .experience__subhead {
+    text-align: center;
+  }
+  .experience__subhead-det {
+    text-align: center;
+  }
+}
+.experience__details {
+  margin: 2rem 0;
+  line-height: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .experience__details {
+    text-align: center;
+  }
+}/*# sourceMappingURL=Experience.css.map */

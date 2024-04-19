@@ -1,0 +1,218 @@
+.portfolio {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 3rem 10rem 0;
+}
+@media screen and (max-width: 1279px) {
+  .portfolio {
+    padding: 3rem 4rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding: 2rem 1rem 0;
+  }
+}
+.portfolio__container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+@media screen and (max-width: 1279px) {
+  .portfolio__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.portfolio__split-l {
+  min-width: 17rem;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__split-l {
+    min-width: auto;
+  }
+}
+.portfolio__header {
+  background-color: rgb(37, 40, 37);
+  color: rgb(251, 250, 253);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1279px) {
+  .portfolio__header {
+    width: 17rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__header {
+    padding: 0.6rem;
+    width: 14rem;
+  }
+}
+.portfolio__text {
+  color: rgb(86, 87, 88);
+  text-align: center;
+  line-height: 3rem;
+}
+@media screen and (max-width: 1279px) {
+  .portfolio__text {
+    max-width: 87rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__text {
+    width: 90%;
+  }
+}
+.portfolio__projects {
+  margin: 3rem;
+  border: 0.1rem solid rgb(251, 250, 253);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  padding: 2rem;
+}
+@media screen and (max-width: 1279px) {
+  .portfolio__projects {
+    max-width: 81rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__projects {
+    margin: 2rem;
+  }
+}
+.portfolio__showcase {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.portfolio__sample {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.portfolio__image {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 1279px) {
+  .portfolio__image {
+    max-width: 28rem;
+    max-height: 28rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__image {
+    min-width: 16rem;
+    min-height: 16rem;
+  }
+}
+.portfolio__details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__details {
+    width: 100%;
+    gap: 1rem;
+  }
+}
+.portfolio__subhead {
+  text-align: center;
+}
+.portfolio__body {
+  line-height: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__body {
+    text-align: center;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
+.portfolio__skills {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio__skill {
+  background-color: rgb(86, 87, 88);
+  border-radius: 0.4rem;
+  color: rgb(251, 250, 253);
+  padding: 0.2rem 0.8rem;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 1279px) {
+  .portfolio__skill {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__skill {
+    font-size: 1.2rem;
+  }
+}
+.portfolio__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.portfolio__repo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.portfolio__icon {
+  filter: contrast(70%);
+  width: 3rem;
+  height: 3rem;
+}
+.portfolio__icon:hover {
+  transition: all 0.3s;
+  filter: contrast(30%);
+}
+.portfolio__link {
+  color: rgb(37, 40, 37);
+  font-weight: 600;
+  border-bottom: 0.2rem solid rgb(251, 250, 253);
+  margin-left: 2rem;
+  padding-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__link {
+    margin: 0;
+  }
+}
+.portfolio__link:hover {
+  border-bottom: 0.2rem solid rgb(37, 40, 37);
+}
+.portfolio__deployed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.portfolio .portfolio__divider:not(:last-child) {
+  width: 6rem;
+  height: 0rem;
+  border-top: 0.5rem dotted rgb(138, 141, 145);
+  margin: 2.4rem auto;
+}/*# sourceMappingURL=Portfolio.css.map */

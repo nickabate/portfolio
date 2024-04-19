@@ -13,7 +13,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <section data-aos="fade-left" id="portfolio" className="portfolio">
+    <section data-aos="fade" id="portfolio" className="portfolio">
       <div className="portfolio__container">
         <div className="portfolio__split-l">
           <h2 className="portfolio__header">Portfolio</h2>

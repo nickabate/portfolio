@@ -1,0 +1,118 @@
+.skills {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 3rem 10rem 0;
+}
+@media screen and (max-width: 1279px) {
+  .skills {
+    padding: 3rem 4rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skills {
+    padding: 2rem 1rem 0;
+  }
+}
+.skills__container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+@media screen and (max-width: 1279px) {
+  .skills__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.skills__split-l {
+  min-width: 17rem;
+}
+@media screen and (max-width: 767px) {
+  .skills__split-l {
+    min-width: auto;
+  }
+}
+.skills__header {
+  background-color: rgb(37, 40, 37);
+  color: rgb(251, 250, 253);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1279px) {
+  .skills__header {
+    width: 17rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skills__header {
+    padding: 0.6rem;
+    width: 14rem;
+  }
+}
+.skills__text {
+  color: rgb(86, 87, 88);
+  text-align: center;
+  line-height: 3rem;
+  max-width: 87rem;
+  margin: 0 auto;
+}
+.skills__shout {
+  text-align: center;
+  color: rgb(37, 40, 37);
+  margin: 3rem auto 0;
+}
+@media screen and (max-width: 767px) {
+  .skills__shout {
+    margin: 2rem auto 0;
+  }
+}
+.skills__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4.2rem;
+  flex-wrap: wrap;
+  border: 0.1rem solid rgb(251, 250, 253);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  margin: 3rem;
+  padding: 2rem;
+}
+@media screen and (max-width: 1279px) {
+  .skills__icons {
+    gap: 3rem;
+    max-width: 81rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skills__icons {
+    margin: 2rem;
+    gap: 1.6rem;
+  }
+}
+.skills__icon {
+  width: 6rem;
+  height: 6rem;
+  filter: contrast(70%);
+}
+@media screen and (max-width: 1279px) {
+  .skills__icon {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skills__icon {
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+}
+.skills__icon:hover {
+  transition: all 0.3s;
+  filter: contrast(30%);
+  transform: scale(1.2);
+}/*# sourceMappingURL=Skills.css.map */
