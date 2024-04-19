@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Aos from "aos";
 
-import resume from "../../assets/files/Nick-Abate-Resume-July-2023.pdf";
 import brainstation from "../../assets/images/icons/brainstation.png";
 
 import "aos/dist/aos.css";
@@ -13,22 +12,14 @@ export default function Experience() {
   }, []);
 
   return (
-    <section data-aos="fade-left" id="experience" className="experience">
+    <section data-aos="fade" id="experience" className="experience">
       <div className="experience__container">
         <div className="experience__split-l">
           <h2 className="experience__header">Experience</h2>
         </div>
         <div className="experience__split-r">
           <p className="experience__text">
-            <a
-              className="experience__resume"
-              href={resume}
-              rel="noreferrer"
-              target="_blank"
-            >
-              Download my resume
-            </a>{" "}
-            or check out{" "}
+            Check out{" "}
             <a
               className="experience__resume"
               href="https://www.linkedin.com/in/nick-abate/"
@@ -39,8 +30,7 @@ export default function Experience() {
             </a>{" "}
             to see my past work experience. Below is what I've been up to
             recently. I'm always searching to make meaningful connections which
-            could lead to future opportunities and am currently looking for a
-            Software Engineering role!
+            could lead to future opportunities!
           </p>
           <div className="experience__current">
             <div className="experience__current-l">
